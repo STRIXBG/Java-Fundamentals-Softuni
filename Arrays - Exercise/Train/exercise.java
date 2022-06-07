@@ -1,3 +1,5 @@
+//Train
+
 package com.softuni;
 
 import java.util.Scanner;

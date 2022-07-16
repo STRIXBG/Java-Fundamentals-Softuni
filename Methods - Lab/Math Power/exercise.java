@@ -1,10 +1,11 @@
 package com.softuni;
 
+import java.text.DecimalFormat;
 import java.util.*;
 
 
 public class Exercise {
-    private static double MathPower(double number, int power) {
+    private static double mathPower(double number, int power) {
         double result = 1;
         for (int i = 0; i < power; i++) {
             result *= number;
@@ -16,6 +17,6 @@ public class Exercise {
         Scanner scanner = new Scanner(System.in);
         double num = scanner.nextDouble();
         int pow = scanner.nextInt();
-        System.out.printf("%.0f",MathPower(num, pow));
+        System.out.println(new DecimalFormat("0.###").format(mathPower(num, pow)));
     }
 }
